@@ -1,4 +1,4 @@
-# 할 일에 빠져드는 시간, DiveIn
+# 🤽할 일에 빠져드는 시간, DiveIn
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/7090906/107105445-ad1ac680-6869-11eb-9eb9-65e95b945424.png"  width="320" />
@@ -68,8 +68,8 @@
 <a href="https://ibb.co/gJjcC7p"><img src="https://i.ibb.co/DQVjnby/2021-02-05-13-30-52.png" alt="2021-02-05-13-30-52" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
 
 ### Project Repository<br>
-- Auth Server :: 
-- Pool Server :: 
+- Auth Server :: []
+- Pool Server :: []
 
 ## 📌 API<br>
 
