@@ -13,6 +13,9 @@
 </div>
 
 ## UI/UX
+### 🎨 Main page
+<a href="https://ibb.co/SwtYQp6"><img src="https://i.ibb.co/N29D1zF/design2.png" alt="design2" border="0"></a><br>
+### 🎨 Overview
 <a href="https://ibb.co/Zcp4TZv"><img src="https://i.ibb.co/j3P04pq/design.png" alt="design" border="0"></a>
 <br><br>
 
