@@ -27,7 +27,7 @@
 - 캠을 통해 **얼굴을 인식하여 감정을 분석**해 현재 집중하고 있는지, 또는 자리를 비웠는지를 체크해 집중도를 계산합니다.
 - 기존의 카페에서 각자 공부하지만 개인의 부담감을 높여 일에 몰입하게 만드는 것처럼, **화상 통화 기술로 온라인에서도 한 공간에 모여 스터디**를 하게 합니다.
 - 스터디하는 중에는 캠이 신경 쓰이지 않게 **나의 화면을 아바타로 대체**하고, 현재 집중하고 있는지 그 척도를 아바타에서 보여줍니다.
-
+<br><br>
 ## 🚀 Tech
 
 1. 얼굴 인식
@@ -41,11 +41,12 @@
    2. Server에 Presigned URL을 요청해 S3 업로드 URL을 받는다.
    3. S3에 직접 업로드하고, 소켓 통신을 통해 같은 방에 있는 유저들에게 나의 업데이트된 아바타 URL 정보를 전송한다.
    4. 다른 유저들은 해당 URL을 받아 화면을 업데이트 해준다.
-   
+<br><br>
 ## 💻 Development Stack
 ### FrontEnd<br>
 - React<br>
-- Ant.d, styled-components<br><br>
+- Ant.d, styled-components
+<br>
 
 ### Server<br>
 - Language/Framework<br>
@@ -72,20 +73,16 @@
 4. [ 인증 서버 ](https://github.com/teamDiveIn/FocusMe-Auth-Server) :: 회원 정보 관리 서버 `Node.js`<br>
    회원가입, 로그인, 토큰 등의 멤버 정보 관리<br>
 5. [ Pool 서버 ](https://github.com/teamDiveIn/FocusMe-Pool-Server) :: 풀 정보 관리 서버 `Django`<br>
-   풀 입장, 풀의 각 멤버의 상태 트래킹하는 서버<br>
+   풀 입장, 풀의 각 멤버의 상태 트래킹하는 서버<br><br>
 
-## 📌 Server Architecture Diagram<br>
+## 📑 Server Architecture Diagram<br>
 
 <img src="https://user-images.githubusercontent.com/7090906/107105446-b015b700-6869-11eb-8506-9ca9e39ad4e8.png" width="600px"  />
 
-## 📌 ERD
+## 📑 ERD
 
 <a href="https://ibb.co/gJjcC7p"><img src="https://i.ibb.co/DQVjnby/2021-02-05-13-30-52.png" alt="2021-02-05-13-30-52" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
 
-### Project Repository<br>
-
-- [인증서버](https://github.com/teamDiveIn/FocusMe-Auth-Server)
-- [풀 서버](https://github.com/teamDiveIn/FocusMe-Pool-Server)
 
 ## 📌 API<br>
 
