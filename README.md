@@ -15,7 +15,7 @@
 ## Service Needs
 
 '줌터디'와 같은 언택트 시대의 새로운 공부법이 등장했습니다.
-비대면 시대에서 집에서 혼자 공부하려니 쉽지 않아 친구들과 줌을 켜서 `상호 감시하는` 용도로 화상회의를 쓰기도 합니다. 
+비대면 시대에서 집에서 혼자 공부하려니 쉽지 않아 친구들과 줌을 켜서 `상호 감시하는` 용도로 화상회의를 쓰기도 합니다.
 
 혼자 있으면 경각심이 떨어져 해야할 일들에 대해서 소홀히 하거나 다른 곳에 시선이 가기 마련입니다.
 이 때 웹캠을 통해서 감시를 하는 것도 좋지만, 얼굴이 공개되는 것을 꺼리거나 기존에 화상회의 플랫폼을 통해 타인에 의해 집중력을 관리하는 것에 대한 한계가 있음에 주목했습니다.
@@ -28,11 +28,24 @@
 - 기존의 카페에서 각자 공부하지만 개인의 부담감을 높여 일에 몰입하게 만드는 것처럼, **화상 통화 기술로 온라인에서도 한 공간에 모여 스터디**를 하게 합니다.
 - 스터디하는 중에는 캠이 신경 쓰이지 않게 **나의 화면을 아바타로 대체**하고, 현재 집중하고 있는지 그 척도를 아바타에서 보여줍니다.
 
-<img width="280" alt="스크린샷 2021-02-06 오전 7 04 35" src="https://user-images.githubusercontent.com/7090906/107106329-68455e80-686e-11eb-9b0c-5f35dab93f7c.png">
-<img width="278" alt="스크린샷 2021-02-06 오전 7 04 52" src="https://user-images.githubusercontent.com/7090906/107106333-6a0f2200-686e-11eb-9147-0448b5a67d81.png">
-<img width="276" alt="스크린샷 2021-02-06 오전 7 05 13" src="https://user-images.githubusercontent.com/7090906/107106335-6b404f00-686e-11eb-9211-500b5e2bd375.png">
-<img width="269" alt="스크린샷 2021-02-06 오전 7 05 37" src="https://user-images.githubusercontent.com/7090906/107106339-6d0a1280-686e-11eb-8e60-e9f4774cc584.png">
-
+<div style="display:flex;">
+  <div style="text-align:center;">
+    <img width="280" alt="스크린샷 2021-02-06 오전 7 04 35" src="https://user-images.githubusercontent.com/7090906/107106329-68455e80-686e-11eb-9b0c-5f35dab93f7c.png" />
+    <div>안면 인식</div>
+  </div>
+  <div style="text-align:center;">
+    <img width="278" alt="스크린샷 2021-02-06 오전 7 04 52" src="https://user-images.githubusercontent.com/7090906/107106333-6a0f2200-686e-11eb-9147-0448b5a67d81.png" />
+    <div>이모지 씌우기</div>
+  </div>
+  <div style="text-align:center;">
+    <img width="276" alt="스크린샷 2021-02-06 오전 7 05 13" src="https://user-images.githubusercontent.com/7090906/107106335-6b404f00-686e-11eb-9211-500b5e2bd375.png" />
+    <div>배경 처리</div>
+  </div>
+  <div style="text-align:center;">
+    <img width="269" alt="스크린샷 2021-02-06 오전 7 05 37" src="https://user-images.githubusercontent.com/7090906/107106339-6d0a1280-686e-11eb-8e60-e9f4774cc584.png" />
+    <div>스켈레톤 제거</div>
+  </div>
+</div>
 
 ## Frontend
 
@@ -71,9 +84,11 @@
 <img src="https://user-images.githubusercontent.com/7090906/107105446-b015b700-6869-11eb-8506-9ca9e39ad4e8.png" width="600px"  />
 
 ## 📌 ERD
+
 <a href="https://ibb.co/gJjcC7p"><img src="https://i.ibb.co/DQVjnby/2021-02-05-13-30-52.png" alt="2021-02-05-13-30-52" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
 
 ### Project Repository<br>
+
 - [ 인증서버 ](https://github.com/teamDiveIn/FocusMe-Auth-Server)
 - [ 풀 서버 ] (https://github.com/teamDiveIn/FocusMe-Pool-Server)
 
@@ -84,22 +99,22 @@
 
 2. WebRTC -- Node Adapting Server (Node.js)<br>
    기본 url :: https:/webrtc.clubapply.com/ <br>
-   `POST`  /token 방 입장 시 socket connection 설정 위한 pool마다의 토큰 제공 <br>
-   `DEL`  /token 방 퇴장 시 socket connection 해제, 삭세<br><br>
+   `POST` /token 방 입장 시 socket connection 설정 위한 pool마다의 토큰 제공 <br>
+   `DEL` /token 방 퇴장 시 socket connection 해제, 삭세<br><br>
 
 3. 인증 서버 <br>
    기본 url :: /api/auth<br>
-   `POST`  /auth/user 회원가입<br>
-   `DELETE`  /auth/user 회원탈퇴<br>
-   `POST`  /auth/user/signin 로그인<br>
-   `POST`  /auth/user/logout 로그아웃<br>
-   `GET`  /auth/user/refresh 리프레시 토큰 발급<br>
-   `POST`  /auth/user/verify 토큰 해독 및 유효성 확인, 유효하면 해당 유저 정보 제공<br><br>
+   `POST` /auth/user 회원가입<br>
+   `DELETE` /auth/user 회원탈퇴<br>
+   `POST` /auth/user/signin 로그인<br>
+   `POST` /auth/user/logout 로그아웃<br>
+   `GET` /auth/user/refresh 리프레시 토큰 발급<br>
+   `POST` /auth/user/verify 토큰 해독 및 유효성 확인, 유효하면 해당 유저 정보 제공<br><br>
 
 4. 풀 Server<br>
    기본 url :: /pool<br>
-   `GET`  /pool 기존에 존재하는 풀 리스트 <br>
-   `POST`  /pool/enter 새로 풀에 입장<br>
-   `POST`  /pool/leave 자리 비움<br>
-   `POST`  /pool/back 자리 복귀<br>
+   `GET` /pool 기존에 존재하는 풀 리스트 <br>
+   `POST` /pool/enter 새로 풀에 입장<br>
+   `POST` /pool/leave 자리 비움<br>
+   `POST` /pool/back 자리 복귀<br>
    `POST` /pool/exit 방 나감<br><br>
