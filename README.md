@@ -20,6 +20,14 @@ frontend에서 인식하여 캐릭터를 입힌 이미지 썸네일을 5초 간�
 
 ### Server Architecture Diagram<br>
 
+### computer Development Stack<br>
+- Web Front: HTML,CSS,JS<br>
+- Language/Framework<br>
+  - Node.js :: 실시간 정보처리<br>
+  - Django :: 그외<br>
+- DB/Cache: MySQL, redis<br>
+- Cloud Service : EC2, S3, RDS
+
 
 ### API<br>
 
