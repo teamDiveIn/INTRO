@@ -12,7 +12,7 @@
   </div>
 </div>
 
-## 🗣️ Service Needs
+## 🤷‍ Service Needs
 
 '줌터디'와 같은 언택트 시대의 새로운 공부법이 등장했습니다.
 비대면 시대에서 집에서 혼자 공부하려니 쉽지 않아 친구들과 줌을 켜서 `상호 감시하는` 용도로 화상회의를 쓰기도 합니다.
@@ -41,19 +41,25 @@
    2. Server에 Presigned URL을 요청해 S3 업로드 URL을 받는다.
    3. S3에 직접 업로드하고, 소켓 통신을 통해 같은 방에 있는 유저들에게 나의 업데이트된 아바타 URL 정보를 전송한다.
    4. 다른 유저들은 해당 URL을 받아 화면을 업데이트 해준다.
+   
+## 💻 Development Stack
+FrontEnd<br>
+- React<br>
+- Ant.d, styled-components<br>
+Server<br>
+- Language/Framework<br>
+  - Node.js :: 실시간 정보처리<br>
+  - Django :: 그외<br>
+- DB/Cache: MySQL, redis<br>
+- Cloud Service : EC2, S3, RDS, ACM, Route53<br><br>
 
-## 🖥️ Frontend
+## 👨‍💻 Frontend
 
 1.  Atomic Design & Contoller 패턴으로 구성
 2.  ML :: 웹캠을 통하여 실시간으로 영상을 받아내, 얼굴 모션인식을 분석<br/>
     얼굴을 인식하여 그 위치와 각도에 맞게 이모지를 붙여내 가상의 아바타를 생성
 
-## 💻 Development Stack
-
-- React
-- Ant.d, styled-components
-
-## 🖥️ Server
+## 👨‍💻 Server
 서버 부하분산을 위해 MSA 도입, 다음과 같은 서버들로 구성
 
 1. WebRTC 서버 :: 실시간 영상전송 서버 `Node.js`<br>
@@ -66,14 +72,6 @@
    회원가입, 로그인, 토큰 등의 멤버 정보 관리<br>
 5. [ Pool 서버 ](https://github.com/teamDiveIn/FocusMe-Pool-Server) :: 풀 정보 관리 서버 `Django`<br>
    풀 입장, 풀의 각 멤버의 상태 트래킹하는 서버<br>
-
-## 💻 Development Stack<br>
-
-- Language/Framework<br>
-  - Node.js :: 실시간 정보처리<br>
-  - Django :: 그외<br>
-- DB/Cache: MySQL, redis<br>
-- Cloud Service : EC2, S3, RDS, ACM, Route53<br><br>
 
 ## 📌 Server Architecture Diagram<br>
 
