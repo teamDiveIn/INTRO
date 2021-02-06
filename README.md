@@ -94,9 +94,8 @@
 
 ## 🤙 API<br>
 
-1. WebRTC 서버 :: 실시간 영상 전송 서버<br>
-   socket<br>
-2. WebRTC -- Node Adapting Server (Node.js)<br>
+1. WebRTC 서버 :: 실시간 영상 전송 서버 (socket)<br>
+2. WebRTC -- Node Adapting Server<br>
    기본 url :: https:/webrtc.clubapply.com/ <br>
    `POST` /token 방 입장 시 socket connection 설정 위한 pool마다의 토큰 제공 <br>
    `DEL` /token 방 퇴장 시 socket connection 해제, 삭세<br>
