@@ -20,19 +20,13 @@
 혼자 있으면 경각심이 떨어져 해야할 일들에 대해서 소홀히 하거나 다른 곳에 시선이 가기 마련입니다.
 이 때 웹캠을 통해서 감시를 하는 것도 좋지만, 얼굴이 공개되는 것을 꺼리거나 기존에 화상회의 플랫폼을 통해 타인에 의해 집중력을 관리하는 것에 대한 한계가 있음에 주목했습니다.
 
-얼굴인식을 통해서 집중도&감정 분석 결과를 제공하고, 같은 스터디원들 간에 집중력을 대결할 수 있는 Gamification요소를 넣어 혼자있어도 집중력있게 일/공부를 끝낼 수 있도록 만들고자 합니다.
+얼굴인식을 통해서 집중도&감정 분석 결과를 제공하고, 같은 스터디원들 간에 집중력을 대결할 수 있는 Gamification요소를 넣어 혼자있어도 집중력있게 일/공부를 끝낼 수 있도록 만들고자 합니다.<br><br>
 
-## 📌 Core Service
+## 📌 Core Service Logic
 
 - 캠을 통해 **얼굴을 인식하여 감정을 분석**해 현재 집중하고 있는지, 또는 자리를 비웠는지를 체크해 집중도를 계산합니다.
 - 기존의 카페에서 각자 공부하지만 개인의 부담감을 높여 일에 몰입하게 만드는 것처럼, **화상 통화 기술로 온라인에서도 한 공간에 모여 스터디**를 하게 합니다.
 - 스터디하는 중에는 캠이 신경 쓰이지 않게 **나의 화면을 아바타로 대체**하고, 현재 집중하고 있는지 그 척도를 아바타에서 보여줍니다.
-
-<img width="280" alt="스크린샷 2021-02-06 오전 7 04 35" src="https://user-images.githubusercontent.com/7090906/107106329-68455e80-686e-11eb-9b0c-5f35dab93f7c.png">
-<img width="278" alt="스크린샷 2021-02-06 오전 7 04 52" src="https://user-images.githubusercontent.com/7090906/107106333-6a0f2200-686e-11eb-9147-0448b5a67d81.png">
-<img width="276" alt="스크린샷 2021-02-06 오전 7 05 13" src="https://user-images.githubusercontent.com/7090906/107106335-6b404f00-686e-11eb-9211-500b5e2bd375.png">
-<img width="269" alt="스크린샷 2021-02-06 오전 7 05 37" src="https://user-images.githubusercontent.com/7090906/107106339-6d0a1280-686e-11eb-8e60-e9f4774cc584.png">
-
 
 ## Frontend
 
@@ -53,9 +47,9 @@
    Django와 Node 사이에서 세션마다 필요한 token 발행 및 삭제하는 서버<br>
 3. Thumbnail 서버 :: 실시간 썸네일 전송 서버 `Node.js`<br>
    frontend에서 인식하여 캐릭터를 입힌 이미지 썸네일을 5초 간격으로 포워딩하는 서버<br>
-4. 인증 서버 :: 회원 정보 관리 서버 `Node.js`<br>
+4. [ 인증 서버 ](https://github.com/teamDiveIn/FocusMe-Auth-Server) :: 회원 정보 관리 서버 `Node.js`<br>
    회원가입, 로그인, 토큰 등의 멤버 정보 관리<br>
-5. Pool 서버 :: 풀 정보 관리 서버 `Django`<br>
+5. [ Pool 서버 ](https://github.com/teamDiveIn/FocusMe-Pool-Server) :: 풀 정보 관리 서버 `Django`<br>
    풀 입장, 풀의 각 멤버의 상태 트래킹하는 서버<br>
 
 ## 💻 Development Stack<br>
@@ -73,9 +67,6 @@
 ## 📌 ERD
 <a href="https://ibb.co/gJjcC7p"><img src="https://i.ibb.co/DQVjnby/2021-02-05-13-30-52.png" alt="2021-02-05-13-30-52" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
 
-### Project Repository<br>
-- [ 인증서버 ](https://github.com/teamDiveIn/FocusMe-Auth-Server)
-- [ 풀 서버 ] (https://github.com/teamDiveIn/FocusMe-Pool-Server)
 
 ## 📌 API<br>
 
