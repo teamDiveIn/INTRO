@@ -1,4 +1,4 @@
-# FocusMe-Readme
+# DiveIn
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/7090906/107105445-ad1ac680-6869-11eb-9eb9-65e95b945424.png"  width="320" />
@@ -8,7 +8,7 @@
   </h3>
 
   <div>
-    <img src="https://badgen.net/badge/AI/FocusMe/blue"/>
+    <img src="https://badgen.net/badge/AI/DiveIn/blue"/>
   </div>
 </div>
 
