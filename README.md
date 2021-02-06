@@ -76,7 +76,7 @@
 
 ## 📑 Server Architecture Diagram<br>
 
-<img src="https://user-images.githubusercontent.com/7090906/107105446-b015b700-6869-11eb-8506-9ca9e39ad4e8.png" width="600px"  />
+<img src="https://user-images.githubusercontent.com/7090906/107105446-b015b700-6869-11eb-8506-9ca9e39ad4e8.png" width="600px"  /><br>
 
 ## 📑 ERD
 
