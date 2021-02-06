@@ -31,7 +31,6 @@
 ## Frontend
 
 1.  Atomic Design & Contoller 패턴으로 구성
-
 2.  ML :: 웹캠을 통하여 실시간으로 영상을 받아내, 얼굴 모션인식을 분석<br/>
     얼굴을 인식하여 그 위치와 각도에 맞게 이모지를 붙여내 가상의 아바타를 생성
 
@@ -42,22 +41,16 @@
 
 ## Server
 
-### Server Introduction
-
 1. WebRTC 서버 :: 실시간 영상전송 서버 `Node.js`<br>
-   WebRTC 기반 openvidu 이용 실시간 영상전송<br><br>
-
+   WebRTC 기반 openvidu 이용 실시간 영상전송<br>
 2. WebRTC -- Django Adapting Server `Node.js`<br>
-   Django와 Node 사이에서 세션마다 필요한 token 발행 및 삭제하는 서버<br><br>
-
+   Django와 Node 사이에서 세션마다 필요한 token 발행 및 삭제하는 서버<br>
 3. Thumbnail 서버 :: 실시간 썸네일 전송 서버 `Node.js`<br>
-   frontend에서 인식하여 캐릭터를 입힌 이미지 썸네일을 5초 간격으로 포워딩하는 서버<br><br>
-
+   frontend에서 인식하여 캐릭터를 입힌 이미지 썸네일을 5초 간격으로 포워딩하는 서버<br>
 4. 인증 서버 :: 회원 정보 관리 서버 `Node.js`<br>
-   회원가입, 로그인, 토큰 등의 멤버 정보 관리<br><br>
-
+   회원가입, 로그인, 토큰 등의 멤버 정보 관리<br>
 5. Pool 서버 :: 풀 정보 관리 서버 `Django`<br>
-   풀 입장, 풀의 각 멤버의 상태 트래킹하는 서버<br><br>
+   풀 입장, 풀의 각 멤버의 상태 트래킹하는 서버<br>
 
 ### 💻 Development Stack<br>
 
@@ -75,8 +68,8 @@
 <a href="https://ibb.co/gJjcC7p"><img src="https://i.ibb.co/DQVjnby/2021-02-05-13-30-52.png" alt="2021-02-05-13-30-52" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
 
 ### Project Repository<br>
-
-- choleor server : https://github.com/Choleor/Choleor-Server-reboot<br>
+- Auth Server :: 
+- Pool Server :: 
 
 ### 📌 API<br>
 
@@ -85,23 +78,22 @@
 
 2. WebRTC -- Node Adapting Server (Node.js)<br>
    기본 url :: https:/webrtc.clubapply.com/ <br>
-   레포지토리 확인 :: <br>
-   `POST` /token 방 입장 시 socket connection 설정 위한 pool마다의 토큰 제공 <br>
-   `DEL` /token 방 퇴장 시 socket connection 해제, 삭세<br><br>
+   `POST`  /token 방 입장 시 socket connection 설정 위한 pool마다의 토큰 제공 <br>
+   `DEL`  /token 방 퇴장 시 socket connection 해제, 삭세<br><br>
 
 3. 인증 서버 <br>
    기본 url :: /api/auth<br>
-   `POST` /auth/user 회원가입<br>
-   `DELETE` /auth/user 회원탈퇴<br>
-   `POST` /auth/user/signin 로그인<br>
-   `POST` /auth/user/logout 로그아웃<br>
-   `GET` /auth/user/refresh 리프레시 토큰 발급<br>
-   `POST` /auth/user/verify 토큰 해독 및 유효성 확인, 유효하면 해당 유저 정보 제공<br><br>
+   `POST`  /auth/user 회원가입<br>
+   `DELETE`  /auth/user 회원탈퇴<br>
+   `POST`  /auth/user/signin 로그인<br>
+   `POST`  /auth/user/logout 로그아웃<br>
+   `GET`  /auth/user/refresh 리프레시 토큰 발급<br>
+   `POST`  /auth/user/verify 토큰 해독 및 유효성 확인, 유효하면 해당 유저 정보 제공<br><br>
 
 4. 풀 Server<br>
    기본 url :: /pool<br>
-   `GET` /pool 기존에 존재하는 풀 리스트 <br>
-   `POST` /pool/enter 새로 풀에 입장<br>
-   `POST` /pool/leave 자리 비움<br>
-   `POST` /pool/back 자리 복귀<br>
-   `POST`/pool/exit 방 나감<br><br>
+   `GET`  /pool 기존에 존재하는 풀 리스트 <br>
+   `POST`  /pool/enter 새로 풀에 입장<br>
+   `POST`  /pool/leave 자리 비움<br>
+   `POST`  /pool/back 자리 복귀<br>
+   `POST` /pool/exit 방 나감<br><br>
