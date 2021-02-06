@@ -4,6 +4,14 @@
   <img src="https://user-images.githubusercontent.com/7090906/107105445-ad1ac680-6869-11eb-9eb9-65e95b945424.png"  width="320" />
 </div>
 
+## Frontend
+
+Atomic Design & Contoller 패턴으로 구성
+
+### 💻 Development Stack
+
+- React
+- Ant.d, styled-components
 
 ## Server
 
@@ -26,12 +34,11 @@
 
 ### 💻 Development Stack<br>
 
-- Web Front: HTML,CSS,JS<br>
 - Language/Framework<br>
   - Node.js :: 실시간 정보처리<br>
   - Django :: 그외<br>
 - DB/Cache: MySQL, redis<br>
-- Cloud Service : EC2, S3, RDS<br><br>
+- Cloud Service : EC2, S3, RDS, ACM, Route53<br><br>
 
 ### 📌 Server Architecture Diagram<br>
 
@@ -56,10 +63,7 @@
    `POST` /token 방 입장 시 socket connection 설정 위한 pool마다의 토큰 제공 <br>
    `DEL` /token 방 퇴장 시 socket connection 해제, 삭세<br><br>
 
-3. 실시간 썸네일 전송 서버<br>
-   socket<br><br>
-
-4. 인증 서버 <br>
+3. 인증 서버 <br>
    기본 url :: /api/auth<br>
    `POST` /auth/user 회원가입<br>
    `DELETE` /auth/user 회원탈퇴<br>
@@ -68,7 +72,7 @@
    `GET` /auth/user/refresh 리프레시 토큰 발급<br>
    `POST` /auth/user/verify 토큰 해독 및 유효성 확인, 유효하면 해당 유저 정보 제공<br><br>
 
-5. 풀 Server<br>
+4. 풀 Server<br>
    기본 url :: /pool<br>
    `GET` /pool 기존에 존재하는 풀 리스트 <br>
    `POST` /pool/enter 새로 풀에 입장<br>
