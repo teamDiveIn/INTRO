@@ -2,11 +2,18 @@
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/7090906/107105445-ad1ac680-6869-11eb-9eb9-65e95b945424.png"  width="320" />
+  <h3>
+    효율적인 시간관리와 집중을 위해<br/>
+    AI가 늘 당신과 함께
+  </h3>
 </div>
 
 ## Frontend
 
-Atomic Design & Contoller 패턴으로 구성
+1.  Atomic Design & Contoller 패턴으로 구성
+
+2. ML :: 웹캠을 통하여 실시간으로 영상을 받아내, 얼굴 모션인식을 분석<br/>
+   얼굴을 인식하여 그 위치와 각도에 맞게 이모지를 붙여내 가상의 아바타를 생성
 
 ### 💻 Development Stack
 
