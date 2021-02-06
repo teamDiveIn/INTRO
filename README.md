@@ -83,7 +83,7 @@
 <a href="https://ibb.co/gJjcC7p"><img src="https://i.ibb.co/DQVjnby/2021-02-05-13-30-52.png" alt="2021-02-05-13-30-52" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
 
 
-## 📌 API<br>
+## 🤙 API<br>
 
 1. WebRTC 서버 :: 실시간 영상 전송 서버<br>
    socket<br><br>
