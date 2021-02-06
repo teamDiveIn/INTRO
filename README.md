@@ -1,6 +1,9 @@
 # FocusMe-Readme
 
-![DiveIn](https://user-images.githubusercontent.com/7090906/107105445-ad1ac680-6869-11eb-9eb9-65e95b945424.png)
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/7090906/107105445-ad1ac680-6869-11eb-9eb9-65e95b945424.png"  width="320" />
+</div>
+
 
 ## Server
 
@@ -32,7 +35,7 @@
 
 ### 📌 Server Architecture Diagram<br>
 
-![Architecture](https://user-images.githubusercontent.com/7090906/107105446-b015b700-6869-11eb-8506-9ca9e39ad4e8.png)
+<img src="https://user-images.githubusercontent.com/7090906/107105446-b015b700-6869-11eb-8506-9ca9e39ad4e8.png" width="600px"  />
 
 ### 📌 ERD
 
@@ -72,4 +75,3 @@
    `POST` /pool/leave 자리 비움<br>
    `POST` /pool/back 자리 복귀<br>
    `POST`/pool/exit 방 나감<br><br>
-
