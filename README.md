@@ -28,7 +28,7 @@ frontend에서 인식하여 캐릭터를 입힌 이미지 썸네일을 5초 간�
   - Node.js :: 실시간 정보처리<br>
   - Django :: 그외<br>
 - DB/Cache: MySQL, redis<br>
-- Cloud Service : EC2, S3, RDS
+- Cloud Service : EC2, S3, RDS<br><br>
 
 
 ### API<br>
@@ -48,14 +48,14 @@ socket<br><br>
 4. 인증 서버 <br>
 기본 url :: /api/auth
 `POST` /auth/user 회원가입<br>
-`DELETE /auth/user 회원탈퇴<br>
+`DELETE` /auth/user 회원탈퇴<br>
 `POST` /auth/user/signin 로그인<br>
 `POST` /auth/user/logout 로그아웃<br>
 `GET` /auth/user/refresh 리프레시 토큰 발급<br>
 `POST` /auth/user/verify 토큰 해독 및 유효성 확인, 유효하면 해당 유저 정보 제공<br><br>
 
 5. Pool Server<br>
-기본 url :: /pool
+기본 url :: /pool<br>
 `GET` /pool 기존에 존재하는 풀 리스트 <br>
 `POST` /pool/enter 새로 풀에 입장<br>
 `POST` /pool/leave 자리 비움<br>
