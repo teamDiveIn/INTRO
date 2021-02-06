@@ -2,8 +2,8 @@
 
 ##  Server
 
-### Server Introduction
-서버는 부하분산을 위해 다음과 같이 나누어 진행하였습니다.
+## Server Introduction
+서버는 부하분산을 위해 다음과 같이 나누어 진행하였습니다.<br>
 
 1. WebRTC 서버 :: 실시간 영상전송 서버 `Node.js`<br>
 WebRTC 기반 openvidu 이용 실시간 영상전송<br><br>
@@ -20,7 +20,7 @@ frontend에서 인식하여 캐릭터를 입힌 이미지 썸네일을 5초 간�
 5. Pool 서버 :: 풀 정보 관리 서버 `Django`<br>
 풀 입장, 풀의 각 멤버의 상태 트래킹하는 서버<br><br>
 
-### 💻 Development Stack<br>
+## 💻 Development Stack<br>
 - Web Front: HTML,CSS,JS<br>
 - Language/Framework<br>
   - Node.js :: 실시간 정보처리<br>
@@ -29,18 +29,18 @@ frontend에서 인식하여 캐릭터를 입힌 이미지 썸네일을 5초 간�
 - Cloud Service : EC2, S3, RDS<br><br>
 
 
-### 📌 Server Architecture Diagram<br>
+## 📌 Server Architecture Diagram<br>
 
 
-### 📌 ERD
+## 📌 ERD
 <a href=""><img src="https://i.ibb.co/JFWT8QR/diagram.png" alt="diagram" border="0"></a>
 
-### Project Repository<br>
+## Project Repository<br>
 * WebRTC server : https://github.com/Choleor/Choleor-Server-reboot<br>
 * Auth Server:
 * Pool Server:
 
-### 📌 API<br>
+## 📌 API<br>
 
 1. WebRTC 서버 :: 실시간 영상 전송 서버<br>
 socket<br><br>
@@ -70,4 +70,3 @@ socket<br><br>
 `POST` /pool/leave 자리 비움<br>
 `POST` /pool/back 자리 복귀<br>
 `POST`/pool/exit 방 나감<br><br>
-
