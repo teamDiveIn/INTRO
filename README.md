@@ -3,6 +3,8 @@
 ##  Server
 
 ### Server Introduction
+서버는 부하분산을 위해 다음과 같이 나누어 진행하였습니다.
+
 1. WebRTC 서버 :: 실시간 영상전송 서버 `Node.js`<br>
 WebRTC 기반 openvidu 이용 실시간 영상전송<br><br>
 
@@ -34,7 +36,9 @@ frontend에서 인식하여 캐릭터를 입힌 이미지 썸네일을 5초 간�
 <a href=""><img src="https://i.ibb.co/JFWT8QR/diagram.png" alt="diagram" border="0"></a>
 
 ### Project Repository<br>
-* choleor server : https://github.com/Choleor/Choleor-Server-reboot<br>
+* WebRTC server : https://github.com/Choleor/Choleor-Server-reboot<br>
+* Auth Server:
+* Pool Server:
 
 ### 📌 API<br>
 
