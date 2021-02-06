@@ -2,7 +2,7 @@
 
 ##  Server
 
-### 서버마다의 role
+### Server Introduction
 1. WebRTC 서버 :: 실시간 영상전송 서버 `Node.js`<br>
 WebRTC 기반 openvidu 이용 실시간 영상전송<br><br>
 
@@ -20,7 +20,9 @@ frontend에서 인식하여 캐릭터를 입힌 이미지 썸네일을 5초 간�
 
 ### Server Architecture Diagram<br>
 
-### computer Development Stack<br>
+
+
+###  Development Stack<br>
 - Web Front: HTML,CSS,JS<br>
 - Language/Framework<br>
   - Node.js :: 실시간 정보처리<br>
@@ -44,7 +46,7 @@ socket<br><br>
 socket<br><br>
 
 4. 인증 서버 <br>
-REST
+기본 url :: /api/auth
 `POST` /auth/user 회원가입<br>
 `DELETE /auth/user 회원탈퇴<br>
 `POST` /auth/user/signin 로그인<br>
@@ -53,7 +55,7 @@ REST
 `POST` /auth/user/verify 토큰 해독 및 유효성 확인, 유효하면 해당 유저 정보 제공<br><br>
 
 5. Pool Server<br>
-기본 url :: 
+기본 url :: /pool
 `GET` /pool 기존에 존재하는 풀 리스트 <br>
 `POST` /pool/enter 새로 풀에 입장<br>
 `POST` /pool/leave 자리 비움<br>
