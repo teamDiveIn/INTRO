@@ -43,13 +43,14 @@
    4. 다른 유저들은 해당 URL을 받아 화면을 업데이트 해준다.
    
 ## 💻 Development Stack
-FrontEnd<br>
+### FrontEnd<br>
 - React<br>
-- Ant.d, styled-components<br>
-Server<br>
+- Ant.d, styled-components<br><br>
+
+### Server<br>
 - Language/Framework<br>
   - Node.js :: 실시간 정보처리<br>
-  - Django :: 그외<br>
+  - Django :: 그외 API 서버 및 서버간 통신 <br>
 - DB/Cache: MySQL, redis<br>
 - Cloud Service : EC2, S3, RDS, ACM, Route53<br><br>
 
