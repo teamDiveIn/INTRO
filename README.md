@@ -1,4 +1,4 @@
-# DiveIn
+# 할 일에 빠져드는 시간, DiveIn
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/7090906/107105445-ad1ac680-6869-11eb-9eb9-65e95b945424.png"  width="320" />
