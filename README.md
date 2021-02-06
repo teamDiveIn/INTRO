@@ -74,8 +74,8 @@
 <a href="https://ibb.co/gJjcC7p"><img src="https://i.ibb.co/DQVjnby/2021-02-05-13-30-52.png" alt="2021-02-05-13-30-52" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
 
 ### Project Repository<br>
-- [ 인증서버 ]()
-- [ ] ()
+- [ 인증서버 ](https://github.com/teamDiveIn/FocusMe-Auth-Server)
+- [ 풀 서버 ] (https://github.com/teamDiveIn/FocusMe-Pool-Server)
 
 ## 📌 API<br>
 
