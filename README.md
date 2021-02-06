@@ -37,10 +37,10 @@
 | ![](https://user-images.githubusercontent.com/7090906/107106329-68455e80-686e-11eb-9b0c-5f35dab93f7c.png) | ![](https://user-images.githubusercontent.com/7090906/107106333-6a0f2200-686e-11eb-9147-0448b5a67d81.png) | ![](https://user-images.githubusercontent.com/7090906/107106335-6b404f00-686e-11eb-9211-500b5e2bd375.png) | ![](https://user-images.githubusercontent.com/7090906/107106339-6d0a1280-686e-11eb-8e60-e9f4774cc584.png) |
 
 2. 썸네일 공유
-    1. 짧은 시간 간격으로 (해당 서비스에서는 2초) 프론트에서 ML 분석 후, Canvas에 옮겨 아바타 이미지를 생성
-    2. Server에 Presigned URL을 요청해 S3 업로드 URL을 받는다.
-    3. S3에 직접 업로드하고, 소켓 통신을 통해 같은 방에 있는 유저들에게 나의 업데이트된 아바타 URL 정보를 전송한다.
-    4. 다른 유저들은 해당 URL을 받아 화면을 업데이트 해준다.
+   1. 짧은 시간 간격으로 (해당 서비스에서는 2초) 프론트에서 ML 분석 후, Canvas에 옮겨 아바타 이미지를 생성
+   2. Server에 Presigned URL을 요청해 S3 업로드 URL을 받는다.
+   3. S3에 직접 업로드하고, 소켓 통신을 통해 같은 방에 있는 유저들에게 나의 업데이트된 아바타 URL 정보를 전송한다.
+   4. 다른 유저들은 해당 URL을 받아 화면을 업데이트 해준다.
 
 ## Frontend
 
@@ -82,13 +82,10 @@
 
 <a href="https://ibb.co/gJjcC7p"><img src="https://i.ibb.co/DQVjnby/2021-02-05-13-30-52.png" alt="2021-02-05-13-30-52" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
 
-<<<<<<< HEAD
-
 ### Project Repository<br>
 
-- [ 인증서버 ](https://github.com/teamDiveIn/FocusMe-Auth-Server)
-- # [ 풀 서버 ] (https://github.com/teamDiveIn/FocusMe-Pool-Server)
-  > > > > > > > 000b07a8d6510c4e3cb56a9bf7424e766297306f
+- [인증서버](https://github.com/teamDiveIn/FocusMe-Auth-Server)
+- [풀 서버](https://github.com/teamDiveIn/FocusMe-Pool-Server)
 
 ## 📌 API<br>
 
