@@ -1,4 +1,4 @@
-# 할 일에 빠져드는 시간, DiveIn
+# 🤽 할 일에 빠져드는 시간, DiveIn
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/7090906/107105445-ad1ac680-6869-11eb-9eb9-65e95b945424.png"  width="320" />
@@ -12,7 +12,7 @@
   </div>
 </div>
 
-## Service
+## Service Needs
 
 '줌터디'와 같은 언택트 시대의 새로운 공부법이 등장했습니다.
 비대면 시대에서 집에서 혼자 공부하려니 쉽지 않아 친구들과 줌을 켜서 `상호 감시하는` 용도로 화상회의를 쓰기도 합니다. 
@@ -22,7 +22,7 @@
 
 얼굴인식을 통해서 집중도&감정 분석 결과를 제공하고, 같은 스터디원들 간에 집중력을 대결할 수 있는 Gamification요소를 넣어 혼자있어도 집중력있게 일/공부를 끝낼 수 있도록 만들고자 합니다.
 
-### 📌 Core Service
+## 📌 Core Service
 
 - 캠을 통해 **얼굴을 인식하여 감정을 분석**해 현재 집중하고 있는지, 또는 자리를 비웠는지를 체크해 집중도를 계산합니다.
 - 기존의 카페에서 각자 공부하지만 개인의 부담감을 높여 일에 몰입하게 만드는 것처럼, **화상 통화 기술로 온라인에서도 한 공간에 모여 스터디**를 하게 합니다.
@@ -40,7 +40,7 @@
 2.  ML :: 웹캠을 통하여 실시간으로 영상을 받아내, 얼굴 모션인식을 분석<br/>
     얼굴을 인식하여 그 위치와 각도에 맞게 이모지를 붙여내 가상의 아바타를 생성
 
-### 💻 Development Stack
+## 💻 Development Stack
 
 - React
 - Ant.d, styled-components
@@ -58,7 +58,7 @@
 5. Pool 서버 :: 풀 정보 관리 서버 `Django`<br>
    풀 입장, 풀의 각 멤버의 상태 트래킹하는 서버<br>
 
-### 💻 Development Stack<br>
+## 💻 Development Stack<br>
 
 - Language/Framework<br>
   - Node.js :: 실시간 정보처리<br>
@@ -66,18 +66,18 @@
 - DB/Cache: MySQL, redis<br>
 - Cloud Service : EC2, S3, RDS, ACM, Route53<br><br>
 
-### 📌 Server Architecture Diagram<br>
+## 📌 Server Architecture Diagram<br>
 
 <img src="https://user-images.githubusercontent.com/7090906/107105446-b015b700-6869-11eb-8506-9ca9e39ad4e8.png" width="600px"  />
 
-### 📌 ERD
+## 📌 ERD
 <a href="https://ibb.co/gJjcC7p"><img src="https://i.ibb.co/DQVjnby/2021-02-05-13-30-52.png" alt="2021-02-05-13-30-52" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
 
 ### Project Repository<br>
-- Auth Server :: 
-- Pool Server :: 
+- [ 인증서버 ]()
+- [ ] ()
 
-### 📌 API<br>
+## 📌 API<br>
 
 1. WebRTC 서버 :: 실시간 영상 전송 서버<br>
    socket<br><br>
